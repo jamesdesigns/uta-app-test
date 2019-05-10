@@ -1,0 +1,22 @@
+<Page
+    class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    >
+
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="Browse"></Label>
+    </ActionBar>
+<ScrollView>
+          <StackLayout>
+            <Button text="Show location" tap="{{ enableLocationServices }}"
+                visibility="{{ currentGeoLocation ? 'collapsed' : 'visible'}}" />
+            <StackLayout visibility="{{ currentGeoLocation ? 'visible' : 'collapsed'}}">
+                <Label text="{{ 'Latitude: ' + currentGeoLocation.latitude }}" />
+                <Label text="{{ 'Longitude: ' + currentGeoLocation.longitude }}" />
+                <Label text="{{ 'Altitude: ' + currentGeoLocation.altitude }}" />
+                <Label text="{{ 'Direction: ' + currentGeoLocation.direction }}" />
+            </StackLayout>
+        </StackLayout>
+        </ScrollView>
+</Page>
