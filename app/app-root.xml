@@ -8,6 +8,10 @@ http://docs.nativescript.org/cookbook/ui/tab-view
     <TabViewItem title="Home" ios:iconSource="res://tabIcons/home" android:iconSource="res://home">
         <Frame defaultPage="home/home-items-page"></Frame>
     </TabViewItem>
+    
+    <!-- <TabViewItem title="Main" ios:iconSource="res://tabIcons/main" android:iconSource="res://main">
+        <Frame defaultPage="main-page/main-page"></Frame>
+    </TabViewItem> -->
 
     <TabViewItem title="Browse" ios:iconSource="res://tabIcons/browse" android:iconSource="res://browse">
         <Frame defaultPage="browse/browse-page"></Frame>
