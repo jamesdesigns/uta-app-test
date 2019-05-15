@@ -1,13 +1,16 @@
 <Page
     class="page"
     navigatingTo="onNavigatingTo"  
-    xmlns="http://schemas.nativescript.org/tns.xsd">
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:maps="nativescript-google-maps-sdk"
+    >
 
     <ActionBar class="action-bar">
         <Label class="action-bar-title" text="Map"></Label>
     </ActionBar>
     <GridLayout class="page-content">
         <!-- <Label class="page-icon fa" text="&#xf002;"></Label> -->
-        <Label class="page-placeholder" text="Map Page"></Label>
+        <!-- <Label class="page-placeholder" text="Map Page"></Label> -->
+ 
     </GridLayout>
 </Page>

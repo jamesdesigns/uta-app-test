@@ -1,7 +1,7 @@
 import { NavigatedData, Page } from "tns-core-modules/ui/page";
 import { BrowseViewModel } from "./browse-view-model";
 import { EventData } from 'tns-core-modules/data/observable';
-import { Page } from 'tns-core-modules/ui/page';
+// import { Page } from 'tns-core-modules/ui/page';
 
 export function onNavigatingTo(args: NavigatedData) {
     const page = <Page>args.object;
@@ -16,5 +16,5 @@ export function pageLoaded(args: EventData) {
     https://docs.nativescript.org/api-reference/classes/_ui_page_.page.html
     */
     let page = <Page>args.object;
-    page.bindingContext = new HomeViewModel();
+    page.bindingContext = new BrowseViewModel();
 }
