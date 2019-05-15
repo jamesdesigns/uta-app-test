@@ -10,9 +10,6 @@ import { Accuracy } from "tns-core-modules/ui/enums"; // used to describe at wha
 require("./bundle-config");
 var application = require("application");
 
-if(application.ios) {
-    GMSServices.provideAPIKey("AIzaSyBErqQxBYZtDEDr6IkdfaBkh2a7asZ3Ub4");
-  }
 
 app.run({ moduleName: "app-root" });
 
