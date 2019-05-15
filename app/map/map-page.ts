@@ -7,3 +7,11 @@ export function onNavigatingTo(args: NavigatedData) {
 }
 
 
+// Original
+// export function onNavigatingTo(args: NavigatedData) {
+//     // Get the event sender
+//     const page = <Page>args.object;
+//     page.bindingContext = new MapViewModel();
+// }
+
+

@@ -8,9 +8,27 @@
     <ActionBar class="action-bar">
         <Label class="action-bar-title" text="Map"></Label>
     </ActionBar>
-    <GridLayout class="page-content">
-        <!-- <Label class="page-icon fa" text="&#xf002;"></Label> -->
-        <!-- <Label class="page-placeholder" text="Map Page"></Label> -->
+    <!-- <GridLayout class="page-content">
+        <Label class="page-icon fa" text="&#xf002;"></Label>
+    <Label class="page-placeholder" text="Map Page"></Label>
  
-    </GridLayout>
+    </GridLayout> -->
+
+
+  <ScrollView>
+    <StackLayout>
+      <Image margin="0" src="~/res/directions.jpg" />
+      <Label text="You get to control both the from and to address. Both specified either as address string or GPS coordinates." class="message" textWrap="true"/>
+      <Button text="is maps app available?" tap="{{ doCheckAvailable }}" class="button button-a" />
+      <Button text="from current location to address" tap="{{ doCurrentLocationToAddress }}" class="button" />
+      <Button text="from coord to coord" tap="{{ doCoordinateToCoordinate }}" class="button" />
+      <Button text="from address to address to address" tap="{{ doAddressToAddressToAddress }}" class="button" />
+      <ios>
+        <Label text="This one prefers Google Maps on iOS:" textWrap="true" class="hint"/>
+      </ios>
+      <Button text="from address to coord" tap="{{ doAddressToCoordinate }}" class="button" />
+    </StackLayout>
+  </ScrollView>
+
+
 </Page>
