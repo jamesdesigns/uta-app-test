@@ -7,6 +7,8 @@ import * as app from "tns-core-modules/application";
 import * as geolocation from "nativescript-geolocation";
 import { Accuracy } from "tns-core-modules/ui/enums"; // used to describe at what accuracy the location should be get
 
+require("./bundle-config");
+var application = require("application");
 
 app.run({ moduleName: "app-root" });
 
